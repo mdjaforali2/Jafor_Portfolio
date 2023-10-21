@@ -2,7 +2,7 @@
 {% load static %}
 <html>
 <head>
-	<title>Jafor</title>
+	<title>Md Jafor Ali</title>
 
 	<style>
 		.fa {
@@ -48,6 +48,26 @@
 			color: white;
 		  }
 
+
+		  .category {
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+        }
+        .skill-column {
+            display: flex;
+        }
+        .skill-list {
+            flex: 1;
+            padding: 0 10px;
+            list-style: none;
+        }
+        progress {
+            display: block;
+            margin: 10px 0;
+        }
+
     </style>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -76,7 +96,7 @@
 	<section class="s1">
 		<div class="main-container">
 			<div class="greeting-wrapper">
-				<h1>Hi, I'm Jafor</h1>
+				<h1>Hi, I'm Md Jafor Ali</h1>
 			</div>
 
 
@@ -85,7 +105,7 @@
 
 				<div class="left-column">
 					<img id="profile_pic" src="{% static 'images/Jafor_Pro_Pic.jpeg' %}">
-					<h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
+					<h5 style="text-align: center;line-height: 0;">Full Stack Developer & Junior Data Scientist</h5>
 
 					<div id="theme-options-wrapper">
 						<div data-mode="light" id="light-mode" class="theme-dot"></div>
@@ -104,7 +124,7 @@
 							<div id="corner-tl" class="corner"></div>
 							<div id="corner-tr" class="corner"></div>
 							<h3>What I Do</h3>
-							<p>Fullstack Developer passionate about Data Science and Web Development</p>
+							<p>I provide end-to-end solutions in web development and data analytics to transform data into actionable insights and responsive web applications.</p>
 							<div id="corner-br" class="corner"></div>
 							<div id="corner-bl" class="corner"></div>
 						</div>
@@ -119,79 +139,103 @@
 
 			<div class="about-wrapper">
 				<div class="about-me">
-					<h4>More about me</h4>
+					<h4>More About Me</h4>
 
-					<p>Proficient in a range of traditional options like SQL, C, JavaScript to modern technologies includes django, REST API and Python. Looking for a challenging role so that I can utilize my skills and capabilities through sincere dedication and hard work.</p>
-				
-					<p>I build new projects just to tickle my brain and love teaching others how they're made.</p>
+					<p>I'm a Full-stack Developer and Junior Data Scientist with a robust proficiency in Python, machine learning, and web development. My core competencies encompass data analysis, the creation of interactive data visualizations, and the development of web applications using Django. My enthusiasm is rooted in harnessing technology to address real-world challenges and translating data-driven insights into practical solutions. I regularly undertake new projects to continually challenge my skills and enjoy sharing my knowledge to facilitate others' understanding.</p>
 
 					<hr>
 
 					<h4>TOP EXPERTISE</h4>
 
-					<p>Fullstack developer with primary focus on Machine Learning & Django: <a target="_blank" href="{% static 'Resume_Jafor.pdf' %}">Download Resume</a></p>
+					<p>Fullstack developer with primary focus on Django & Data Analysis: <a target="_blank" href="{% static 'Resume_Jafor.pdf' %}">Download Resume</a></p>
 
-					<div id="skills">
-						<ul>
-							<progress id="file" value="85" max="100"></progress>
-							<label for="file">Data Analysis</label>
-							<br>
+					
 
-							<progress id="file" value="78" max="100"></progress>
-							<label for="file">Data Visualization</label>
-							<br>
-
-							<progress id="file" value="79" max="100"></progress>
-							<label for="file">Machine Learning</label>
-							<br>
-
-							<progress id="file" value="85" max="100"></progress>
-							<label for="file">Python</label>
-							<br>
-
-							<progress id="file" value="77" max="100"></progress>
-							<label for="file">SQL</label>
-							<br>
-						</ul>
-
-						<ul>
-							<progress id="file" value="80" max="100"></progress>
-							<label for="file">Django</label>
-							<br>
-
-							<progress id="file" value="65" max="100"></progress>
-							<label for="file">REST API</label>
-							<br>
-
-							<progress id="file" value="65" max="100"></progress>
-							<label for="file">AWS(S3)/Heroku</label>
-							<br>
-
-							<progress id="file" value="67" max="100"></progress>
-							<label for="file">JavaScript</label>
-							<br>
-
-							<progress id="file" value="78" max="100"></progress>
-							<label for="file">HTML/CSS/Bootstrap</label>
-							<br>
-							<br>
-						</ul>
+					<div class="category">
+						<h4>Front-end</h4>
+						<div class="skill-column">
+							<ul class="skill-list">
+								<li>
+									<label for="file">HTML/CSS/Bootstrap</label>
+									<progress id="file" value="90" max="100"></progress>
+								</li>
+								<li>
+									<label for="file">JavaScript</label>
+									<progress id="file" value="67" max="100"></progress>
+								</li>
+							</ul>
+							<ul class="skill-list">
+								<li>
+									<label for="file">React</label>
+									<progress id="file" value="75" max="100"></progress>
+								</li>
+								<li>
+									<label for="file">Vue.Js</label>
+									<progress id="file" value="72" max="100"></progress>
+								</li>
+							</ul>
+						</div>
 					</div>
-
-				</div>
-
-		
-				{% comment %} <div class="social-links">
-					<img id="social_img" src="{% static 'images/follow.jpg' %}">
-					<h3>Find me on Twitter & Youtube</h3>
-
-					<a target="_blank" href="https://www.youtube.com/c/dennisivy">YouTube: @DennisIvy</a>
-					<br>
-					<a target="_blank" href="https://twitter.com/dennisivy11">Twitter: @DennisIvy11</a>
-				</div> {% endcomment %}
-			</div> 
-
-		</div>
+				
+					<div class="category">
+						<h4>Back-end</h4>
+						<div class="skill-column">
+							<ul class="skill-list">
+								<li>
+									<label for="file">Python-Django</label>
+									<progress id="file" value="95" max="100"></progress>
+								</li>
+								<li>
+									<label for="file">SQL/NoSQL</label>
+									<progress id="file" value="89" max="100"></progress>
+								</li>
+								<li>
+									<label for="file">RESTful APIs</label>
+									<progress id="file" value="78" max="100"></progress>
+								</li>
+							</ul>
+							<ul class="skill-list">
+								<li>
+									<label for="file">Node.js</label>
+									<progress id="file" value="80" max="100"></progress>
+								</li>
+								<li>
+									<label for="file">AWS</label>
+									<progress id="file" value="70" max="100"></progress>
+								</li>
+								<li>
+									<label for="file">Github/Git</label>
+									<progress id="file" value="82" max="100"></progress>
+								</li>
+							</ul>
+						</div>
+					</div>
+				
+					<div class="category">
+						<h4>Data Science</h4>
+						<div class="skill-column">
+							<ul class="skill-list">
+								<li>
+									<label for="file">Data Analysis</label>
+									<progress id="file" value="95" max="100"></progress>
+								</li>
+								<li>
+									<label for="file">Machine Learning Projects</label>
+									<progress id="file" value="78" max="100"></progress>
+								</li>
+							</ul>
+							<ul class="skill-list">
+								<li>
+									<label for="file">Data Visualization</label>
+									<progress id="file" value="85" max="100"></progress>
+								</li>
+								<li>
+									<label for="file">A/B Testing</label>
+									<progress id="file" value="78" max="100"></progress>
+								</li>
+							</ul>
+						</div>
+					</div>
 	</section>
 
 	<section class="s1">
@@ -215,8 +259,8 @@
 
 			<p align="center">
 				<a href="{% url 'posts' %}">View More</a>
-			</p> {% endcomment %}
-		</div>
+			</p> 
+		</div> {% endcomment %}
 
 	</section>
 
@@ -245,15 +289,18 @@
 				<input id="submit-btn" type="submit" value="Send">
 			</form>
 			<div class="row social" align="center">
-				<a href="#" class="fa fa-facebook"></a>
-				<a href="#" class="fa fa-twitter"></a>
-				<a href="#" class="fa fa-github"></a>
-				<a href="#" class="fa fa-linkedin"></a>
-				<a href="#" class="fa fa-youtube"></a>
+				<a href="" class="fa fa-facebook"></a>
+				{% comment %} <a href="#" class="fa fa-twitter"></a> {% endcomment %}
+				<a href="https://github.com/mdjaforali2" class="fa fa-github"></a>
+				<a href="https://www.linkedin.com/in/mdjaforali11/" class="fa fa-linkedin"></a>
+				{% comment %} <a href="#" class="fa fa-youtube"></a> {% endcomment %}
+				<p>&copy; 2023 Md Jafor Ali. All rights reserved.</p>
 			</div>
+	
 			<br>
 			<br>
 			<br>
+
 		</div>
 
 	</section> 
@@ -263,5 +310,8 @@
 	</script>
 
 	<script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+
+	<!-- Copyright and Rights Information -->
+
 </body>
 </html>

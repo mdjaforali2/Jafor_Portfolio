@@ -1,0 +1,21 @@
+/* Reset some default styles to create a consistent baseline */
+body, h1, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+a {
+    color: #007acc;
+    text-decoration: none;
+}
