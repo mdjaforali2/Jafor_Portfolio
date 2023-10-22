@@ -68,6 +68,40 @@
             margin: 10px 0;
         }
 
+		.skill-item {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		
+		.skill-item label {
+			flex: 1;
+			margin-right: 10px;
+		}
+		
+		.skill-item progress {
+			flex: 1;
+		}
+		.skill-list {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 5px 0;
+		}
+		
+		.skill-list label {
+			text-align: left;
+			flex: 1; /* Takes up available space */
+			margin-right: 10px; /* Add some spacing between label and progress bar */
+		}
+		
+		.skill-list progress {
+			flex: 1; /* Takes up available space */
+		}
+		
+		
+		
+
     </style>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -90,6 +124,9 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'css/default.css' %}">
 	<link id="theme-style" rel="stylesheet" type="text/css" href="">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
 </head>
 <body>
 
@@ -105,7 +142,7 @@
 
 				<div class="left-column">
 					<img id="profile_pic" src="{% static 'images/Jafor_Pro_Pic.jpeg' %}">
-					<h5 style="text-align: center;line-height: 0;">Full Stack Developer & Junior Data Scientist</h5>
+					<h5 style="text-align: center;">Full Stack Developer & Junior Data Scientist</h5>
 
 					<div id="theme-options-wrapper">
 						<div data-mode="light" id="light-mode" class="theme-dot"></div>
@@ -123,7 +160,7 @@
 						<div id="preview">
 							<div id="corner-tl" class="corner"></div>
 							<div id="corner-tr" class="corner"></div>
-							<h3>What I Do</h3>
+							<h4>What I Do</h4>
 							<p>I provide end-to-end solutions in web development and data analytics to transform data into actionable insights and responsive web applications.</p>
 							<div id="corner-br" class="corner"></div>
 							<div id="corner-bl" class="corner"></div>
@@ -150,92 +187,104 @@
 					<p>Fullstack developer with primary focus on Django & Data Analysis: <a target="_blank" href="{% static 'Resume_Jafor.pdf' %}">Download Resume</a></p>
 
 					
+					<div class="category">
+						<h4 style="display: flex; align-items: center; justify-content: center;">
+							Front-end
+							<img src="{% static 'images/icons/html.png' %}" style="width: 30px; height: 30px; margin-left: 10px;">
+							<img src="{% static 'images/icons/css.png' %}" style="width: 30px; height: 30px; margin-left: 10px;">
+							<img src="{% static 'images/icons/js.png' %}" style="width: 30px; height: 30px; margin-left: 10px;">
+							<img src="{% static 'images/icons/bootstrap.png' %}" style="width: 30px; height: 30px; margin-left: 10px;">
+							<img src="{% static 'images/icons/vue.png' %}" style="width: 30px; height: 30px; margin-left: 10px;">
+							<img src="{% static 'images/icons/react.png' %}" style="width: 30px; height: 30px; margin-left: 10px;">
+						</h4>						
+						
+						<div class="skill-list">
+						  <label for="file" style="text-align: center; font-size: 1.5em;">HTML/CSS/Bootstrap</label>
+						  <progress id="file" value="90" max="100"></progress>
+						</div>
+						<div class="skill-list">
+						  <label for="file" style="text-align: center; font-size: 1.5em;">JavaScript</label>
+						  <progress id="file" value="67" max="100"></progress>
+						</div>
+						<div class="skill-list">
+						  <label for="file" style="text-align: center; font-size: 1.5em;">React</label>
+						  <progress id="file" value="75" max="100"></progress>
+						</div>
+						<div class="skill-list">
+						  <label for="file" style="text-align: center; font-size: 1.5em;">Vue.Js</label>
+						  <progress id="file" value="72" max="100"></progress>
+						</div>
+					  </div>
+					  
+					<div class="category">
+						<h4 style="display: flex; align-items: center; justify-content: center;">
+							Back-end
+							<img src="{% static 'images/icons/python.png' %}" style="width: 30px; height: 30px; margin-left: 10px;">
+							<img src="{% static 'images/icons/dj.png' %}" style="width: 30px; height: 30px; margin-left: 10px;">
+							<img src="{% static 'images/icons/nodejs.png' %}" style="width: 30px; height: 30px; margin-left: 10px;">
+							<img src="{% static 'images/icons/sql.png' %}" style="width: 30px; height: 30px; margin-left: 10px;">
+							<img src="{% static 'images/icons/mongodb.png' %}" style="width: 30px; height: 30px; margin-left: 10px;">
+							<img src="{% static 'images/icons/aws.png' %}" style="width: 30px; height: 30px; margin-left: 10px;">
+							<img src="{% static 'images/icons/github.png' %}" style="width: 30px; height: 30px; margin-left: 10px;">
+						</h4>	
 
-					<div class="category">
-						<h4>Front-end</h4>
-						<div class="skill-column">
-							<ul class="skill-list">
-								<li>
-									<label for="file">HTML/CSS/Bootstrap</label>
-									<progress id="file" value="90" max="100"></progress>
-								</li>
-								<li>
-									<label for="file">JavaScript</label>
-									<progress id="file" value="67" max="100"></progress>
-								</li>
-							</ul>
-							<ul class="skill-list">
-								<li>
-									<label for="file">React</label>
-									<progress id="file" value="75" max="100"></progress>
-								</li>
-								<li>
-									<label for="file">Vue.Js</label>
-									<progress id="file" value="72" max="100"></progress>
-								</li>
-							</ul>
+						<div class="skill-list">
+						  <label for="file" style="text-align: center; font-size: 1.5em;">Python-Django</label>
+						  <progress id="file" value="95" max="100"></progress>
 						</div>
-					</div>
-				
-					<div class="category">
-						<h4>Back-end</h4>
-						<div class="skill-column">
-							<ul class="skill-list">
-								<li>
-									<label for="file">Python-Django</label>
-									<progress id="file" value="95" max="100"></progress>
-								</li>
-								<li>
-									<label for="file">SQL/NoSQL</label>
-									<progress id="file" value="89" max="100"></progress>
-								</li>
-								<li>
-									<label for="file">RESTful APIs</label>
-									<progress id="file" value="78" max="100"></progress>
-								</li>
-							</ul>
-							<ul class="skill-list">
-								<li>
-									<label for="file">Node.js</label>
-									<progress id="file" value="80" max="100"></progress>
-								</li>
-								<li>
-									<label for="file">AWS</label>
-									<progress id="file" value="70" max="100"></progress>
-								</li>
-								<li>
-									<label for="file">Github/Git</label>
-									<progress id="file" value="82" max="100"></progress>
-								</li>
-							</ul>
+						<div class="skill-list">
+						  <label for="file" style="text-align: center; font-size: 1.5em;">SQL/NoSQL</label>
+						  <progress id="file" value="89" max="100"></progress>
 						</div>
-					</div>
-				
-					<div class="category">
-						<h4>Data Science</h4>
-						<div class="skill-column">
-							<ul class="skill-list">
-								<li>
-									<label for="file">Data Analysis</label>
-									<progress id="file" value="95" max="100"></progress>
-								</li>
-								<li>
-									<label for="file">Machine Learning Projects</label>
-									<progress id="file" value="78" max="100"></progress>
-								</li>
-							</ul>
-							<ul class="skill-list">
-								<li>
-									<label for="file">Data Visualization</label>
-									<progress id="file" value="85" max="100"></progress>
-								</li>
-								<li>
-									<label for="file">A/B Testing</label>
-									<progress id="file" value="78" max="100"></progress>
-								</li>
-							</ul>
+						<div class="skill-list">
+							<label for="file" style="text-align: center; font-size: 1.5em;">RESTful APIs</label>
+							<progress id="file" value="78" max="100"></progress>
+						  </div>
+						<div class="skill-list">
+						  <label for="file" style="text-align: center; font-size: 1.5em;">Node.js</label>
+						  <progress id="file" value="80" max="100"></progress>
 						</div>
-					</div>
+						<div class="skill-list">
+						  <label for="file" style="text-align: center; font-size: 1.5em;">AWS</label>
+						  <progress id="file" value="70" max="100"></progress>
+						</div>
+						<div class="skill-list">
+						  <label for="file" style="text-align: center; font-size: 1.5em;">Github/Git</label>
+						  <progress id="file" value="82" max="100"></progress>
+						</div>
+					  </div>
+					  
+
+					  <div class="category">
+						<h4 style="display: flex; align-items: center; justify-content: center;">
+							Data Science
+							<img src="{% static 'images/icons/pandas.png' %}" style="width: 30px; height: 30px; margin-left: 10px;">
+							<img src="{% static 'images/icons/powerbi.png' %}" style="width: 30px; height: 30px; margin-left: 10px;">
+							<img src="{% static 'images/icons/numpy.png' %}" style="width: 30px; height: 30px; margin-left: 10px;">
+							<img src="{% static 'images/icons/gc.png' %}" style="width: 30px; height: 30px; margin-left: 10px;">
+							<img src="{% static 'images/icons/jupyter.png' %}" style="width: 30px; height: 30px; margin-left: 10px;">
+							<img src="{% static 'images/icons/ml.png' %}" style="width: 30px; height: 30px; margin-left: 10px;">
+							<img src="{% static 'images/icons/pytorch.png' %}" style="width: 30px; height: 30px; margin-left: 10px;">
+						</h4>
+						<div class="skill-list">
+						  <label for="file" style="text-align: center; font-size: 1.5em;">Data Analysis</label>
+						  <progress id="file" value="95" max="100"></progress>
+						</div>
+						<div class="skill-list">
+						  <label for="file" style="text-align: center; font-size: 1.5em;">Machine Learning Projects</label>
+						  <progress id="file" value="78" max="100"></progress>
+						</div>
+						<div class="skill-list">
+						  <label for "file" style="text-align: center; font-size: 1.5em;">Data Visualization</label>
+						  <progress id="file" value="85" max="100"></progress>
+						</div>
+						<div class="skill-list">
+						  <label for="file" style="text-align: center; font-size: 1.5em;">A/B Testing</label>
+						  <progress id="file" value="78" max="100"></progress>
+						</div>
+					  </div>
+										  
+					
 	</section>
 
 	<section class="s1">
